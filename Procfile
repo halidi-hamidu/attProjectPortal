@@ -1,0 +1,1 @@
+web: gunicorn AttPortalproject.wsgi --log-file -
