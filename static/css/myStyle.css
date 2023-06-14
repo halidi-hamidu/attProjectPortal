@@ -1,0 +1,46 @@
+:root{
+    --backgroundColor1: #fff;
+    --backgroundColor2: #f4f7fa;
+    --backgroundColor3: #040f0f;
+    --fontColor1:#fff;
+    --fontColor2:#000;
+    --boxShadow: 16px 11px 21px -11px rgba(0,0,0,0.1);
+}
+
+.sidebar{
+    background-color: var(--backgroundColor1);
+    color: var(--fontColor2);
+}
+.sidebar .nav .nav-item .nav-link{
+    color: var(--fontColor2);
+}
+.sidebar .nav .nav-item a:hover{
+    color: var(--fontColor2);
+  
+}
+.navbar .navbar-brand-wrapper {
+    background: var(--backgroundColor3);
+
+}
+.sidebar .nav .nav-item:first-child .nav-link{
+    border-top: 1px solid #000;
+}
+.sidebar .nav .nav-item .nav-link:hover {
+    border-top: 1px solid var(--backgroundColor3) !important;
+    border-bottom: 1px solid var(--backgroundColor3) !important;
+    color: var(--backgroundColor3) !important;
+}
+
+.sidebar .nav .nav-item .nav-link i.menu-icon{
+    font-size: 1.125rem;
+    line-height: 1;
+    margin-right: 1.125rem;
+    color: var(--backgroundColor3) !important;
+}
+
+.sidebar .user-profile {
+    margin: 2rem 0;
+    text-align: center;
+    color: var(--fontColor2);
+    font-weight: bold;
+}
