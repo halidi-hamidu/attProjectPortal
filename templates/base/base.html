@@ -143,7 +143,7 @@
               <span class="menu-title">Dashboard</span>
             </a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <i class="icon-disc menu-icon"></i>
               <span class="menu-title">UI Elements</span>
@@ -179,8 +179,8 @@
               <i class="icon-help menu-icon"></i>
               <span class="menu-title">Icons</span>
             </a>
-          </li>
-          <li class="nav-item">
+          </li> -->
+          <!-- <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
               <i class="icon-head menu-icon"></i>
               <span class="menu-title">User Pages</span>
@@ -195,7 +195,7 @@
                 <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> Lockscreen </a></li>
               </ul>
             </div>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="docs/documentation.html">
               <i class="icon-book menu-icon"></i>
@@ -207,13 +207,9 @@
       <!-- partial -->
       <div class="main-panel">
         <div class="content-wrapper">
-          <div class="row">
-            <div class="col-sm-12 mb-4 mb-xl-0">
-              <h4 class="font-weight-bold text-dark">Hi, welcome back!</h4>
-              <p class="font-weight-normal mb-2 text-muted">APRIL 1, 2019</p>
-            </div>
-          </div>
+          {% block content %}
           
+          {% endblock %}
         </div>
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
