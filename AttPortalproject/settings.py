@@ -26,7 +26,7 @@ DATABASE_URL = "postgresql://postgres:tvQJa6qyu1uNMYpD9MdR@containers-us-west-16
 SECRET_KEY = 'django-insecure-))qn=v)p!jj4zq@8$ze^3x2km3q_h@5*=+pg@g^%e&6geh=f83'
 
 
-# CSRF_TRUSTED_ORIGINS =['https://vcptuihi-dee.up.railway.app','https://*.127.0.0.1']
+CSRF_TRUSTED_ORIGINS =['https://attprojectportal-production.up.railway.app','https://*.127.0.0.1']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
