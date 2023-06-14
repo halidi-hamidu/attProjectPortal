@@ -19,7 +19,7 @@ def attportalAuth(request):
         
     else:
         form = AuthenticationForm()
-        template_name = 'attportalAuth/attportalAuth.html'
+        template_name = 'attPortalAuth/attPortalAuth.html'
         context ={
             'form':form
         }
