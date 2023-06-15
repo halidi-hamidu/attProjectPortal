@@ -11,7 +11,6 @@ class AttPortalMemberModel(models.Model):
     REGIONS=(
         ('Arusha', 'Arusha'),
         ('Dar es Salaam', 'Dar es Salaam'),
-        ('Dar es Salaam', 'Dar es Salaam'),
         ('Dodoma', 'Dodoma'),
         ('Geita', 'Geita'),
         ('Iringa', 'Iringa'),
