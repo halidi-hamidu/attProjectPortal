@@ -80,7 +80,7 @@
 }
 
 .sidebar {
-    height: 50vh;
+    height: 100vh;
     /* background: #ec37fc; */
     background: #fff;
     color: #000;
@@ -89,6 +89,8 @@
     padding: 0;
     width: 240px;
     overflow-y: scroll;
+    position: fixed;
+    top: 60px;
     z-index: 11;
     transition: width 0.25s ease, background 0.25s ease;
     -webkit-transition: width 0.25s ease, background 0.25s ease;
@@ -98,4 +100,60 @@
     -webkit-box-shadow: 6px 16px 31px -18px #b7bcd1;
     -moz-box-shadow: 6px 16px 31px -18px #b7bcd1;
     -ms-box-shadow: 6px 16px 31px -18px #b7bcd1;
+}
+.content-wrapper, .main-panel {
+    height: 100vh;
+    background: #f4f7fa  !important;
+    padding: 2.5rem 2.5rem;
+    width: 100%;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    margin: 0px -1px;
+   
+
+}
+
+.modal .form_section form input, .modal .form_section form select{
+    width: 100%;
+    display: block;
+    margin: 5px 0px;
+    padding: 10px 5px;
+    outline: 0.3px solid #eee;
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+.modal .form_section form input, .modal .form_section form label{
+    width: 100%;
+    /* margin: 5px 0px; */
+    /* padding: 10px 5px; */
+    /* border: 1px solid #eee;
+    border-radius: 10px; */
+}
+.modal .form_section form input, .modal .form_section form span{
+    width: 100%;
+    display: block;
+    /* margin: 5px 0px; */
+    /* padding: 10px 5px; */
+    /* border: 1px solid #eee;
+    border-radius: 10px; */
+}
+.modal .form_section form input:focus, .modal .form_section form select:focus{
+    width: 100%;
+    /* margin: 5px 0px;
+    padding: 10px 5px; */
+    border-radius: 10px;
+    outline: 1px solid rgb(4, 253, 100);
+}
+
+/* media query for side bar */
+@media (max-width: 900px) {
+    .content-wrapper {
+        background: #f4f7fa;
+        padding: 2.5rem 2.5rem;
+        width: 100%;
+        -webkit-flex-grow: 1;
+        flex-grow: 1;
+        margin: 0px auto !important;
+    }
+
 }

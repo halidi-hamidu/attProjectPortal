@@ -23,4 +23,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
       path('', include('attportalAuth.urls', namespace='attportalAuth')),
       path('dashbord', include('attPortalDashboard.urls', namespace='attPortalDashboard')),
+      path('member', include('attPortalMember.urls', namespace='attPortalMember')),
 ]
