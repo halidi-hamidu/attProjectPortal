@@ -23,6 +23,10 @@
   <link rel="stylesheet" href="{% static './css/myStyle.css' %}">
   <!-- endinject -->
   <link rel="shortcut icon" href="{% static './images/favicon.png' %}" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.3.6/css/buttons.dataTables.min.css">
+  
+
 </head>
 <body>
   <div class="container-scroller">
@@ -180,22 +184,48 @@
               <span class="menu-title">Icons</span>
             </a>
           </li> -->
-          <!-- <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
               <i class="icon-head menu-icon"></i>
-              <span class="menu-title">User Pages</span>
+              <span class="menu-title">Regions</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="auth">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/login-2.html"> Login 2 </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Register </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/register-2.html"> Register 2 </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> Lockscreen </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Arusha </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/login-2.html">Dar es Salaam </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> 	Dodoma </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/register-2.html"> Geita </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> Iringa </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> 	Bukoba </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> 	Mpanda </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> 	Kigoma </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> 	Moshi </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> 		Lindi </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> 		Babati </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> 			Musoma </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> 			Mbeya </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> 			Zanzibar City </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> 			Morogoro </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> 				Mtwara </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> 				Mwanza </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> 					Njombe </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> 					Wete </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> 					Chake-Chake </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> 				Kibaha </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> 				Sumbawanga </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> 				Songea </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> 					Shinyanga </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> 					Bariadi </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> 					Singida </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> 					Vwawa </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> 					Tabora </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> 					Tanga </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> 					Mkokotoni </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> 					Koani </a></li>
               </ul>
             </div>
-          </li> -->
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="docs/documentation.html">
               <i class="icon-book menu-icon"></i>
@@ -246,6 +276,24 @@
   <!-- Custom js for this page-->
   <script src="{% static './js/dashboard.js' %}"></script>
   <!-- End custom js for this page-->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.print.min.js"></script>
+  <script>
+    $(document).ready(function() {
+    $('#example').DataTable( {
+        dom: 'Bfrtip',
+        buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print'
+        ]
+    } );
+} );
+  </script>
 </body>
 
 </html>

@@ -30,6 +30,23 @@
     border-bottom: 1px solid var(--backgroundColor3) !important;
     color: var(--backgroundColor3) !important;
 }
+.sidebar .nav.sub-menu .nav-item .nav-link{
+    color: var(--fontColor2) !important;
+    padding: 1rem 4rem;
+    position: relative;
+    font-size: 0.875rem;
+    line-height: 1;
+    height: auto;
+    border-top: 1px solid var(--fontColor2) !important;
+    margin: 0;
+}
+.sidebar .nav .nav-item .nav-link .menu-title {
+    color: var(--fontColor2);
+    display: inline-block;
+    font-size: 0.875rem;
+    line-height: 1;
+    vertical-align: middle;
+}
 
 .sidebar .nav .nav-item .nav-link i.menu-icon{
     font-size: 1.125rem;
@@ -37,10 +54,48 @@
     margin-right: 1.125rem;
     color: var(--backgroundColor3) !important;
 }
+.sidebar .nav.sub-menu .nav-item .nav-link::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    margin-top: 21px;
+    border-radius: 50%;
+    border: 2px solid var(--fontColor2) !important;
+    left: 2.5rem;
+    top: -2px;
+}
+.sidebar .nav.sub-menu .nav-item:first-child .nav-link {
+    border-top: 1px solid var(--fontColor2);
+}
+.sidebar .nav.sub-menu .nav-item:first-child .nav-link:hover {
+    border-top: 1px solid var(--fontColor2);
+}
 
 .sidebar .user-profile {
     margin: 2rem 0;
     text-align: center;
     color: var(--fontColor2);
     font-weight: bold;
+}
+
+.sidebar {
+    height: 50vh;
+    /* background: #ec37fc; */
+    background: #fff;
+    color: #000;
+    font-family: "Karla", sans-serif;
+    font-weight: normal;
+    padding: 0;
+    width: 240px;
+    overflow-y: scroll;
+    z-index: 11;
+    transition: width 0.25s ease, background 0.25s ease;
+    -webkit-transition: width 0.25s ease, background 0.25s ease;
+    -moz-transition: width 0.25s ease, background 0.25s ease;
+    -ms-transition: width 0.25s ease, background 0.25s ease;
+    box-shadow: 6px 16px 31px -18px #b7bcd1;
+    -webkit-box-shadow: 6px 16px 31px -18px #b7bcd1;
+    -moz-box-shadow: 6px 16px 31px -18px #b7bcd1;
+    -ms-box-shadow: 6px 16px 31px -18px #b7bcd1;
 }
